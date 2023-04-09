@@ -1,118 +1,253 @@
-h1 { 
-    margin: none;
-    padding-right:30%;
-    text-align:right;
-    color:rgb(9, 138, 212);
-
-}
-
-.loop1 {
-    color:rgba(0, 0, 255, 0.486);
-
-}
-
-label.logo {
-    color:white;
-    font-size: 35px;
-    line-height: 80px;
-    padding: 0 100px;
-    font-weight: bold; 
-}
-
-nav {
-    background: #0082e6;
-    height: 80px;
-    width:100%;
-}
-
-nav ul{
-    float: right;
-    margin-right: 20px;
-
-}
-nav ul li {
-    display: inline-block;
-    line-height: 80px;
-    margin: 0 5px;
-    
-}
- 
-nav ul li a{
-    color: whitesmoke;
-    font-size: 17px;
-    padding: 7px 13px;
-    border-radius: 3px;
-    text-transform: uppercase;
-}
-
-a.active,a:hover {
-    background: #1b9bff;
-    transition: .5s;
-
-
-}
-
-.checkbtn {
+/* Reset styles for consistent look across browsers */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Basic styles for body */
+  body {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    color: #333;
+    background-color: #fff;
+    line-height: 1.5;
+  }
+  
+  /* Navigation styles */
+  nav {
+    background-color: #007bff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+  }
+  
+  nav label.logo {
+    color: #fff;
     font-size: 30px;
-    color: white;
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
+    font-weight: bold;
+    padding: 10px 20px;
     cursor: pointer;
-}
-
-#check{
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    background-color: #fff;
+    color: #007bff;
+  }
+  
+  nav .checkbtn {
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 60px;
+    margin-right: 20px;
+    cursor: pointer;
     display: none;
-}
-
-@media (max-width: 952px){
-
-    label.logo{
-        font-size:30px;
-        padding-left: 50px;
+  }
+  
+  @media (max-width: 950px) {
+    nav ul {
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background-color: #007bff;
+      top: 60px;
+      left: -100%;
+      transition: all 0.3s ease;
     }
-    nav ul li a{
-        font-size: 16px; 
-    }
-}
-
-@media (max-width: 858px){
-    .checkbtn{
-        display: block;
-    }
-    ul{
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background: #2c3e50;
-        top: 80px;
-        left: -100%;
-        text-align: center;
-        transition: all .5s;
-
-    }
-    nav ul li{
-        display: block;
+    nav ul li {
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
     }
     nav ul li a {
-        font-size: 20px;
+      font-size: 20px;
+      margin-left: -100px;
+      transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     }
-    a:hover,a.active{
-        background: none;
-        color: #0082e6;
+    nav .checkbtn {
+      display: block;
+      cursor: pointer;
     }
-}
-
-body {
-    text-align: inherit;
-    background-image:url(relax\ vb\ team\ backg\ image.jpeg);
-    background-repeat: no-repeat;
-    background-attachment:fixed;
-    background-size: 100%;
-    color:rgb(10, 2, 2);
-    font-family:montserrat;
-
+    #check:checked ~ ul {
+      left: 0;
+    }
+    #check:checked ~ .checkbtn {
+      color: #fff;
+    }
+  }
+  
+  /* Header styles */
+  header {
+    background-color: #fff;
+    padding: 60px 0;
+    text-align: center;
+  }
+  
+  header h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  header p {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  
+  /* Main content styles */
+  main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 60px 0;
+  }
+  
+  main h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  main p {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+  
+  main ul {
+    list-style: none;
+    margin-bottom: 30px;
+  }
+  
+  main ul li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+   Activities and Events
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
     
-}
-
+    header h2 {
+        margin: 0;
+        font-size: 28px;
+        text-transform: uppercase;
+    }
+    
+    header nav {
+        display: flex;
+        gap: 20px;
+    }
+    
+    header nav li {
+        list-style-type: none;
+    }
+    
+    header nav a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 18px;
+        padding: 10px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+    
+    header nav a:hover {
+        background-color: #0408dfa1;
+    }
+    
+    .team-members {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+        margin-top: 40px;
+        padding: 20px;
+        text-align:center;
+    }
+    
+    .member {
+        max-width: 300px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        text-align: center;
+        transition: box-shadow 0.3s ease;
+    }
+    
+    .member img {
+        max-width: 100%;
+        border-radius: 50%;
+    }
+    
+    .member h4 {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-size: 22px;
+        text-transform: uppercase;
+    }
+    
+    .member p {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 10px;
+    }
+    
+    .member:hover {
+        box-shadow: 0 0 20px rgba(3, 35, 221, 0.795);
+    }
+    
+    .team-stats {
+        background-color: #103fc0;
+        color: #fff;
+        padding: 20px;
+        margin-top: 40px;
+        text-decoration-style: arial;
+    }
+    
+    .team-stats h3 {
+        margin-top: 0;
+        text-transform: uppercase;
+        font-size: 24px;
+    }
+    
+    .team-stats ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .team-stats li {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
 
