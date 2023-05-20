@@ -40,7 +40,7 @@ html {
   position: sticky;  /*not yet done with the navigation sticking on the top of the page*/
   top: 0;
   z-index:1;
-  width:fit-content;
+  width: 60%;
   justify-content: right;
   
 
@@ -58,6 +58,7 @@ html {
   justify-content: right;
   padding: 0;
   padding: 2rem;
+
 }
 
 .navy li {
@@ -93,6 +94,7 @@ body {
   font-size: 16px;
   line-height: 1.5rem;
   background-color:rgba(199, 226, 250, 0.699);
+  text-align: justify;
 }
 
 .hero-title  {
@@ -116,6 +118,8 @@ body {
 
 .container {
   width:50%;
+  text-align: justify;
+
 }
 
 
