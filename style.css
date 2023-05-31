@@ -1,6 +1,7 @@
 html {
   font-family:Roboto;
   scroll-behavior:smooth;
+  margin: 2rem;
 
 
 }
@@ -29,7 +30,7 @@ html {
   /* position: sticky; */
   margin-bottom: 5rem;
   border-radius: 1rem;
-  background-image: url(./blue.jpg);
+  background-image: url(../images/blue.jpg);
   background-repeat: no-repeat;
   background-size: cover;
  /*  width: 100%; */
@@ -133,4 +134,29 @@ footer {
 /* .header {
   height: 100vh; /*tringto put all the headers 100view port width*/
 
+#container{
+  display: flex-col;
+  
+}
 
+#slider1 {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid blue;
+  border-shadow: 3 3 3px black;
+  align-items: end;
+  margin-bottom: 3rem;
+}
+
+
+#slider2 {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+}
+
+
+.photo1{
+
+
+}
