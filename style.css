@@ -1,132 +1,162 @@
-/* /* * {
-  padding: 0;
+html {
+  font-family:Roboto;
+  scroll-behavior:smooth;
+  margin: 2rem;
+
+
+}
+
+/* .title{
+  background-color: rgba(21, 129, 253, 0.774);
+  color: rgb(245, 245, 245);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 500;
+  text-align: center;
+  border-bottom: 1px solid blue;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  padding:2rem;
   margin: 0;
+  
 } */
 
-
-html {
-  height: 200vh;
-/*   line-height: 1.3rem; */
-/*   width: 100; */
-  min-height: 100%;
-  background-color: #eef7ff;
-
-
-}
-
-.logo {
-  text-decoration: none;
-  font-style:unset;
-  font-weight:500;
-  text-align: center;
-}
-
-
 .menu {
-  list-style-type: none;
-  text-align: right;
-  flex-direction: column-reverse;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-weight: 470;
-  line-height: 60px;
-  height: 100%;
-  width: relative;
-
-  background-color:  rgba(16, 49, 240, 0.76);
-  /* border: 1px solid   rgba(16, 49, 240, 0.76); */
-  border-radius: 5px;
-  box-shadow: 0 0 10px #02a2ffdc;
-  position:relative;
-}
-
-
-li {
-
-  display: inline;
-}
-
-
-li a {
-  
-  list-style-type: none;
-  text-decoration: none;
-  padding: 20px 16px;
-  color: rgb(255, 255, 255);
-  text-transform: uppercase;
-}
-
-.menu a:hover {
-  color:rgb(184, 243, 240);
-  text-decoration: none;
-
-}
-
-
-.hero-title {
-  margin-top: 2rem;
-}
-
-p {
-  font-family: serif;
-  width: 50%;
-} 
-#umugongo {
-  width:50px;
-  height: 80px;
-  image-resolution: 100px;
-  position: fixed;
-}
-body {
-  font-family: 'Emojis', Arial, Helvetica, sans-serif;
-  font-weight: 100;
-  color:rgba(5, 5, 5, 0.788);
-  image-rendering: url('relax\ vb\ team\ backg\ image.jpeg');
-  background-size:cover;
  
+  
+  padding: 2rem;
+  
+ /*  border:2px solid rgba(24, 128, 247, 0.685);
+   */
+  /* position: sticky; */
+  margin-bottom: 5rem;
+  border-radius: 1rem;
+  background-image: url(../images/blue.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+ /*  width: 100%; */
 
+  
 
 }
 
-/* #moving-image {
-  position:relative;
-  width: 40px;
-  height: 29px; 
+.navy {
+  position: sticky;  /*not yet done with the navigation sticking on the top of the page*/
   top: 0;
+  z-index:1;
+  width: auto;
+  justify-content: center;
+  
+
+}
+/*  
+.header {
+  height: 100vh
+  margin-bottom: 200px;
+  padding: 
+} */
+
+.navy ul {
+  list-style: none;
+  display: flex;
+  justify-content: right;
+  padding: 0;
+  padding: 2rem;
+
+}
+
+.navy li {
+  margin: 0 10px;
+}
+
+.navy a {
+  position: relative;
+  text-decoration: none;
+  color: #000;
+  font-size: 1.4rem;
+}
+
+.navy a::after {
+  content: '';
+  position: absolute;
   left: 0;
-  animation: move 10s infinite linear;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
 }
- */
-.content {
-  top: 0;
-  background-color:rgb(42, 5, 255);
-  width: 3rem;
-  height: 5rem;
-  text-align: top right;
-  border:1px solid rgb(112, 102, 248);
-  border-radius: 0.4em;
-  text-transform: capitalize;
-  font-family:italic;
- 
-  color: rgb(250, 247, 247);  
-  padding: 1em;
-  padding-top: 0;
+
+.navy a:hover::after {
+  transform: scaleX(1);
+}
+
+
+body {
+  color: #333;
+  font-size: 16px;
+  line-height: 1.5rem;
+  background-color:rgba(199, 226, 250, 0.699);
+  text-align: justify;
+}
+
+.hero-title  {
+  color:rgb(0, 0, 0);
+  font-size: 2rem;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   
-
 }
 
-.content:hover {
-
-  box-shadow:0  0 1px #171ace;
-}
-
-.logo {
-  color:rgb(54, 40, 253);
-  font-weight: 300;
-  font-style: italic;
-  top: 0;
-  bottom: 5em;
-/*   text-shadow: 0 0 1px rgb(11, 182, 173); */
+.Section-Tittle {
+  color: black;
+  line-height: 1.5rem;
+  margin: 10% 30%;
   
-}  */
+}
+
+.Section-Tittle:hover {
+  color:rgb(4, 0, 255);
+  text-decoration:solid;
+}
+
+.container {
+  width:50%;
+  text-align: justify;
+
+}
 
 
+footer {
+  text-align: center;
+  margin-bottom: 30 px 10px;
+}
+
+/* .header {
+  height: 100vh; /*tringto put all the headers 100view port width*/
+
+#container{
+  display: flex-col;
+  
+}
+
+#slider1 {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid blue;
+  border-shadow: 3 3 3px black;
+  align-items: end;
+  margin-bottom: 3rem;
+}
+
+
+#slider2 {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+}
+
+
+.photo1{
+
+
+}
